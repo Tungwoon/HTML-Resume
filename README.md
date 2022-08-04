@@ -1,2 +1,2 @@
 # CTF-Series
-Useful tools and command 
+Useful tools and commands 
