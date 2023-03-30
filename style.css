@@ -1,0 +1,56 @@
+* {
+  max-width: 700px;
+  margin: auto;
+}
+
+html {
+  height: 100%;  
+}
+
+
+header{
+	position: relative;
+	top: 50px;
+	max-width: 100%;
+}
+
+h1 {
+  text-align: left;
+	position: relative;
+	bottom: 200px;
+	left: 200px;
+}
+
+
+body {
+  min-height: 100%;  
+  background:white;
+  font-family: Arial;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 18px;
+	margin-left: 10px;
+}
+
+p.details{
+	text-align: left;
+	position: relative;
+	bottom: 150px;
+	left: 210px;
+	box-sizing: 100px;
+}
+
+main{ 
+position: relative;
+bottom: 40px;	
+}
+
+p.job-role {
+	font-size: 13px;
+	}
+
+
+p.position {
+	font-weight: bold;
+	}
