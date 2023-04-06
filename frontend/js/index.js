@@ -1,22 +1,20 @@
-window.addEventListener('DOMContentLoaded',(event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
   getVisitCount();
-})
+});
 
-const functionApi = 'https://getresumehttpcounter.azurewebsites.net/api/HttpTrigger1?code=OPfJtv5gOZfKxn5nbchTvvyRrVAaQPuSxPv8N80jmI6UAzFuS7wVqA=='; 
-
+const functionApi = 'https://getresumecounterhttp.azurewebsites.net/api/HttpTrigger1?code=lkfOCHSjqDT-W3ktyGnTyGk7NQjJkUcINK7UvGfHm2OIAzFu5Xh3gQ=='; 
 
 const getVisitCount = () => {
-  let count = 30
-  fetch(functionApi).then(Response => {
-    return Response.json()
-  }).then (Response =>{
-    console.log ("Website called function API.");
-    count = Response.count;
-    document.getElementById("counter").innerText = count;
-  }).catch(function(error){
-    console.log(error);
-  });
+  let count = 0;
+  fetch(functionApi, {
+      mode: 'cors',
+  })
+  .then(response => {
+      return response.json()
+  })
+  .then(res => {
+      const count = res;
+      document.getElementById('counter').innerText =count;
+  })
   return count;
 }
-
-
