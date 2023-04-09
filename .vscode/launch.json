@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/backend/Tests/bin/Debug/net7.0/Tests.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/Tests",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    },
+    {
+      "name": "Attach to Python Functions",
+      "type": "python",
+      "request": "attach",
+      "port": 9091,
+      "preLaunchTask": "func: host start"
+    }
+  ]
+}
