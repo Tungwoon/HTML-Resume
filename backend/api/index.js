@@ -1,4 +1,4 @@
-//http counter here
+//http visit counter here 
 
 module.exports = async function (context, req, data) {
     context.log('JavaScript HTTP trigger function processed a request.');
