@@ -2,7 +2,7 @@
 
 Tung Hor's Resume URL: https://www.thewoons.life/
 
-<b><u>Introduction</b></u>
+<b><u>Introduction</u></b>
 
 Challenges:
 - Created a GitHub repository
