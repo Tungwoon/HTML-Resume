@@ -31,7 +31,7 @@ jobs:
       - name: 'Resolve Project Dependencies Using Npm'
         shell: pwsh
         run: |
-          pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/HttpTrigger1'
+          pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api/HttpTrigger1'
           npm install
           npm run build --configuration Release --output ./output
           popd
