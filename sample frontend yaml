@@ -1,0 +1,36 @@
+name: deploy_frontend
+# Deploys when push is made from frontend folder
+# included az cli version as the original template not working properly
+  
+on:
+    push:
+        branches: [ master ]
+        paths:
+        - 'frontend/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.46.0
+        inlineScript: |
+            az storage blob upload-batch --account-name tungresumefiles --auth-mode key -d '$web' -s frontend/ --overwrite
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.46.0
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "resumealiasCDN" --name "thewoons" --resource-group "project_resume" --no-wait
+
+  # Azure logout
+    - name: logout
+      run: |
+            az logout
+      if: always()
