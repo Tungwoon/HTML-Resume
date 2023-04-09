@@ -23,16 +23,17 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
-        uses: actions/setup-dotnet@v1
+      - name: Setup Node ${{ env.NODE_VERSION }} Environment
+        uses: actions/setup-node@v1
         with:
-          dotnet-version: ${{ env.DOTNET_VERSION}}
+          node-version: ${{ env.NODE_VERSION}}
 
-      - name: 'Resolve Project Dependencies Using Dotnet'
+      - name: 'Resolve Project Dependencies Using Npm'
         shell: pwsh
-        run: 
+        run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
-          dotnet build --configuration Release --output ./output
+          npm install
+          npm run build --configuration Release --output ./output
           popd
         
       - name: 'Run Azure Functions Action'
