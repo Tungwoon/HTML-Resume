@@ -1,0 +1,35 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "inputDocument",
+      "direction": "in",
+      "type": "cosmosDB",
+      "connectionStringSetting": "cosmodbresume_DOCUMENTDB",
+      "databaseName": "AzureResume",
+      "collectionName": "Counter"
+    },
+    {
+      "name": "outputDocument",
+      "direction": "out",
+      "type": "cosmosDB",
+      "connectionStringSetting": "cosmodbresume_DOCUMENTDB2",
+      "databaseName": "AzureResume",
+      "collectionName": "Counter"
+    }
+  ]
+}
