@@ -1,3 +1,5 @@
+//http counter
+
 module.exports = async function (context, req, data) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
