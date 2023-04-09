@@ -1,6 +1,7 @@
 name: deploy_frontend
 # Deploys when push is made from frontend folder
-
+# included azcliversion as the original template not working properly
+  
 on:
     push:
         branches: [ master ]
