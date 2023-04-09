@@ -15,7 +15,7 @@ env:
     build-and-deploy:
       runs-on: windows-latest
       steps:
-      - name: 'Checkout Github Action'
+      - name: 'Checkout GitHub Action'
         uses: actions/checkout@master
 
       - name: 'Login via Azure CLI'
