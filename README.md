@@ -20,6 +20,7 @@ Challenges:
 - CI/CD (Front end) with Github Actions 
   
   
+  
 Next Improvements:
 - Create functions API with Python
 - Create Test modules with Python
@@ -45,7 +46,8 @@ Github Setup
 7. git log  ##version history
 8. git reset . ##reset the changes
   
-  
+ 
+ 
 Azure Cosmo DB, Static Website, CDN and HTTPS
 1. Create a new Cosmo DB for NoSQL API with serverless Capacity mode under same resource group.
 2. Create the new database account name as "AzureResumeCosmoDB" with serverless capacity mode.
@@ -55,7 +57,8 @@ Azure Cosmo DB, Static Website, CDN and HTTPS
 6. Create a new endpoint in Azure CDN with static website hostname, after created add a new custom domain.
 7. Once mapping is doned, select the custom domain URL to configure "Enable domain HTTPS" with default certificate settings.
   
-  
+ 
+ 
 Azure Functions and API
 1. Create a new function app with the same resource group 
 2. Deploy code with Node.js runtime stack, version 16 in the region closer to you, Windows OS with Serverless consumption to minimise cost.
@@ -64,7 +67,8 @@ Azure Functions and API
 5. In Code + Test option on the left panel, write your code or refer to my index.js file in Github backend api folder.
 6. Obtain the function URL and paste it in frontend main.js (const functionApi = 'https://getresumecounter....').
 7. Lastly go to function app and update custom domain URL and static website URL in CORS.
-  
+ 
+ 
   
 CI/CD Frontend
 1. Create a new ".github" directory and under that directory create another directory "workflows" 
