@@ -2,9 +2,8 @@
 <br>
 Tung Hor's Resume URL: https://www.thewoons.life/
 <br>
-![Cloud Resume Challenge Diagram](https://user-images.githubusercontent.com/100461340/230848906-56c8ebd3-98ce-46a1-83ab-981c588b1966.png)
-<br>
-[Cloud Resume Challenge Diagram.pdf](https://github.com/Tungwoon/HTML-Resume/files/11188489/Cloud.Resume.Challenge.Diagram.pdf)  
+![Cloud Resume Challenge Diagram](https://user-images.githubusercontent.com/100461340/230849564-8c632ee5-5f72-4789-aabb-e97ae3eefac0.png)
+[Cloud.Resume.Challenge.Diagram.pdf](https://github.com/Tungwoon/HTML-Resume/files/11188541/Cloud.Resume.Challenge.Diagram.pdf)
   
 **Introduction**
   
