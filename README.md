@@ -1,5 +1,6 @@
 # Cloud Resume Challenge in Azure 
 
+![diagram](https://drive.google.com/file/d/1LFKE5XiWlMnun4gKFuuPz0_F__T2wLCc/view?usp=sharing "diagram")
 Tung Hor's Resume URL: https://www.thewoons.life/
   
   
