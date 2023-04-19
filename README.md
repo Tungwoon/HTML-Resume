@@ -63,8 +63,8 @@ Azure Functions and API
 1. Create a new function app with the same resource group 
 2. Deploy code with Node.js runtime stack, version 16 in the region closer to you, Windows OS with Serverless consumption to minimise cost.
 3. Next, create a new "HTTP Trigger" function.
-4. Under Integration on the left panel, add input and output binding, refer to my function.json in Github backend api folder.
-5. In Code + Test option on the left panel, write your code or refer to my index.js file in Github backend api folder.
+4. Under Integration on the left pane, add input and output binding, refer to my function.json in Github backend api folder.
+5. In Code + Test option on the left pane, write your code or refer to my index.js file in Github backend api folder.
 6. Obtain the function URL and paste it in frontend main.js (const functionApi = 'https://getresumecounter....').
 7. Lastly go to function app and update custom domain URL and static website URL in CORS.
  
