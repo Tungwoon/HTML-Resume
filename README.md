@@ -51,9 +51,9 @@ Github Setup
 Azure Cosmo DB, Static Website, CDN and HTTPS
 1. Create a new Cosmo DB for NoSQL API with serverless Capacity mode under same resource group.
 2. Create the new database account name as "AzureResumeCosmoDB" with serverless capacity mode.
-3. Go to Data Explorer on the left panel, create a new container as "AzureResume" and add new item as "Counter". Under id partition key, change value to "1", and add another field "count" : 0  --> save
+3. Go to Data Explorer on the left pane, create a new container as "AzureResume" and add new item as "Counter". Under id partition key, change value to "1", and add another field "count" : 0  --> save
 4. Next deploy the static website (HTML) into Azure storage account, index.html will be stored in blob storage.
-5. In Azure portal storage account, on the left panel click 'Static Website', endpoint URL is located here.
+5. In Azure portal storage account, on the left pane click 'Static Website', endpoint URL is located here.
 6. Create a new endpoint in Azure CDN with static website hostname, after created add a new custom domain.
 7. Once mapping is doned, select the custom domain URL to configure "Enable domain HTTPS" with default certificate settings.
   
