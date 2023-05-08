@@ -77,7 +77,11 @@
 
 	<p>Penetration Test and Report Project | <a href="https://docs.google.com/document/d/1Ui3c6rWutoDULm6r5D4RvTvVXqR4jRDtDFNvA4Soqmo/edit" target="_black"> URL</a></p>
 	<ul>
-		<li>Summary: Performed a penetration test on Rekalls network using a virtual disk image as a copy of the live network to identify vulnerabilities and recommend improvements to network security.</li>
+		<li>Summary: Performed a penetration test on Rekalls network using a virtual disk image as a copy of the live network to identify vulnerabilities and recommend improvements to network security. <br>
+				During the test, critical vulnerabilities, such as SQL injection, cross-site scripting, and PHP injection, were identified on Rekall's web pages. In addition, on the Linux server, 
+				I was able to infiltrate the network and detect vulnerabilities including shellshock, Drupal remote code execution, Apache Struts RCE, among others. Regarding the Windows server, 
+				I successfully compromised the system and obtained admin credentials, enabling the escalation of privileges and lateral movement to the domain controller server. 
+				The report contains further elaboration and a comprehensive remediation plan, which will aid Rekall in fortifying their network against potential threats.</li>
 		<li>Role: Penetration Tester</li>
 		<li>Tools: Wireshark, Burp Suite, Metasploit, OSINT (Shodan.io)"</li>
 	</ul>
@@ -86,7 +90,9 @@
 
 	<p>Security Monitoring Environment Building | <a href="https://drive.google.com/drive/folders/1ApVZRz946oKzMNz0PelLDiWhZshf8TOK" target="_black"> URL</a></p>
 	<ul>
-		<li>Summary: Analyse Windows & Apache servers logs against simulated attacks, Post Incident Presentation.</li>
+		<li>Summary: Analyse Windows & Apache servers logs against simulated attacks, Post Incident Presentation. <br> 
+				Upon analyzing the available evidence, it is evident that the servers were targeted, most likely by means of a brute force password attack. To enhance the network's security, 
+				we advise the implementation of more refined alerts, capable of detecting suspicious activity that went unnoticed by the initial alerts.</li>
 		<li>Role: Group contributor and report author</li>
 		<li>Tools: Splunk</li>
 	</ul>
